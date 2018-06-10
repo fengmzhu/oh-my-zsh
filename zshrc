@@ -65,6 +65,12 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+rm -f ~/.zcompdump*
+compinit
+if [[ -a  ~/.zcompdump ]]; then
+cp ~/.zcompdump ~/.zcompdump-$HOSTNAME-$ZSH_VERSION
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
