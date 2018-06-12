@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH=~/.oh-my-zsh
@@ -65,11 +65,11 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-rm -f ~/.zcompdump*
-compinit
-if [[ -a  ~/.zcompdump ]]; then
-cp ~/.zcompdump ~/.zcompdump-$HOSTNAME-$ZSH_VERSION
-fi
+#rm -f ~/.zcompdump*
+#compinit
+#if [[ -a  ~/.zcompdump ]]; then
+#cp ~/.zcompdump ~/.zcompdump-$HOSTNAME-$ZSH_VERSION
+#fi
 
 # User configuration
 
@@ -98,4 +98,4 @@ fi
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-alias edit='docker run -it --rm -v $(pwd):/home/developer/workspace feng_vim:latest'
+alias edit='docker run -it --rm -v $(pwd):/home/developer/workspace fengmzhu/docker_vim'
