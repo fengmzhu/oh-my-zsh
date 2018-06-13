@@ -1,6 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+#if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
+#	export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+#	alias ls='ls --color'
+#fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -87,6 +92,7 @@ plugins=(
   zsh-autosuggestions
   vi-mode
   git
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -125,5 +131,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 alias edit='docker run -it --rm -v $(pwd):/home/developer/workspace fengmzhu/docker_vim'
+alias vrc='vim ~/.vimrc'
+alias zrc='vim ~/.zshrc'
+alias bs='. ~/.zshrc'
 
 
