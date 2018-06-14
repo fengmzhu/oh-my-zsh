@@ -1,5 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+if [[ -d "$HOME/.oh-my-zsh/custom/plugins/extra-completions" ]]; then
+fpath=(~/.oh-my-zsh/custom/plugins/extra-completions $fpath)
+fi
 
 #if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
 #	export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
