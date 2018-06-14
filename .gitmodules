@@ -7,3 +7,6 @@
 [submodule "custom/plugins/zsh-completions"]
 	path = custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
+[submodule "custom/plugins/zshmarks"]
+	path = custom/plugins/zshmarks
+	url = https://github.com/jocelynmallon/zshmarks.git

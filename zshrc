@@ -97,6 +97,7 @@ plugins=(
   vi-mode
   git
   z
+  zshmarks
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -139,4 +140,8 @@ alias vrc='vim ~/.vimrc'
 alias zrc='vim ~/.zshrc'
 alias bs='. ~/.zshrc'
 
-
+#zshmarks
+alias g="jump"
+alias s="bookmark"
+alias d="deletemark"
+alias p="showmarks"
