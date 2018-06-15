@@ -140,6 +140,9 @@ alias edit='docker run -it --rm -v $(pwd):/home/developer/workspace fengmzhu/doc
 alias vrc='vim ~/.vimrc'
 alias zrc='vim ~/.zshrc'
 alias bs='. ~/.zshrc'
+if [[ -e "/usr/local/bin/mvim" ]]; then
+	alias vim='mvim -v'
+fi
 
 #zshmarks
 alias g="jump"
