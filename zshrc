@@ -4,6 +4,9 @@ if [[ -d "$HOME/.oh-my-zsh/custom/plugins/extra-completions" ]]; then
 fpath=(~/.oh-my-zsh/custom/plugins/extra-completions $fpath)
 fi
 
+#for ranger
+export EDITOR=vim
+
 #if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
 #	export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 #	alias ls='ls --color'
