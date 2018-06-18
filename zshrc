@@ -7,10 +7,9 @@ fi
 #for ranger
 export EDITOR=vim
 
-#if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
-#	export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-#	alias ls='ls --color'
-#fi
+if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
+	export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -139,13 +138,19 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
+if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
+	alias ls='gls --color'
+fi
 alias edit='docker run -it --rm -v $(pwd):/home/developer/workspace fengmzhu/docker_vim'
 alias vrc='vim ~/.vimrc'
 alias zrc='vim ~/.zshrc'
+alias rrc='vim ~/.config/ranger/rc.conf'
 alias bs='. ~/.zshrc'
+alias c='clear'
 if [[ -e "/usr/local/bin/mvim" ]]; then
 	alias vim='mvim -v'
 fi
+alias rg='ranger'
 
 #zshmarks
 alias g="jump"
