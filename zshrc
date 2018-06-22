@@ -12,6 +12,7 @@ if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
 fi
 
 # Path to your oh-my-zsh installation.
+DISABLE_AUTO_UPDATE="true"
 export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
