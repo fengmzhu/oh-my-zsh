@@ -146,6 +146,7 @@ alias edit='docker run -it --rm -v $(pwd):/home/developer/workspace fengmzhu/doc
 alias vrc='vim ~/.vimrc'
 alias zrc='vim ~/.zshrc'
 alias rrc='vim ~/.config/ranger/rc.conf'
+alias skrc='vim ~/.skhdrc'
 alias bs='. ~/.zshrc'
 alias c='clear'
 if [[ -e "/usr/local/bin/mvim" ]]; then
