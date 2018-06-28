@@ -4,6 +4,7 @@ if [[ -d "$HOME/.oh-my-zsh/custom/plugins/extra-completions" ]]; then
 fpath=(~/.oh-my-zsh/custom/plugins/extra-completions $fpath)
 fi
 
+export TERM="xterm-256color"
 #for ranger
 export EDITOR=vim
 
@@ -153,6 +154,7 @@ if [[ -e "/usr/local/bin/mvim" ]]; then
 	alias vim='mvim -v'
 fi
 alias rg='ranger'
+alias gacp='git add --all&& git commit && git push'
 
 #zshmarks
 alias g="jump"
