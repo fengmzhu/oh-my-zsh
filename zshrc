@@ -144,8 +144,8 @@ if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
 	alias ls='gls --color'
 fi
 alias edit='docker run -it --rm -v $(pwd):/home/developer/workspace fengmzhu/docker_vim'
-alias vrc='vim ~/.vimrc'
-alias zrc='vim ~/.zshrc'
+alias vrc='vim ~/.vim/vimrc'
+alias zrc='vim ~/.oh-my-zsh/zshrc'
 alias rrc='vim ~/.config/ranger/rc.conf'
 alias skrc='vim ~/.skhdrc'
 alias bs='. ~/.zshrc'
