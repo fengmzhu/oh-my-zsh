@@ -155,6 +155,7 @@ if [[ -e "/usr/local/bin/mvim" ]]; then
 fi
 alias rg='ranger'
 alias gacp='git add --all&& git commit && git push'
+alias skim='open -a Skim'
 
 #zshmarks
 alias g="jump"
